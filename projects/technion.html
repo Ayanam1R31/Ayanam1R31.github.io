@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Technion Turbomachinery Lab | Owen Maute</title>
+  <meta name="description" content="Hybrid system architect and ECU designer for a hybrid microturbine UAV powerplant.">
+  <meta property="og:title" content="Technion Turbomachinery Lab | Owen Maute">
+  <meta property="og:description" content="Hybrid system architect and ECU designer for a hybrid microturbine UAV powerplant.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a class="nav-brand" href="../index.html">Owen Maute</a>
+      <button class="nav-toggle" type="button" aria-expanded="false">Menu</button>
+      <ul class="nav-links"><li><a href="../projects/project-adam.html">ADAM</a></li><li><a href="../projects/project-lilith.html">LILITH</a></li><li><a href="../projects/radaround.html">RadAround</a></li><li><a href="../projects/modumotor.html">ModuMotor</a></li><li><a href="../projects/technion.html">Technion</a></li><li><a href="../projects/xjep.html">XJEP</a></li></ul>
+      <ul class="nav-side">
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero hero--project">
+      <img class="hero-media" src="../assets/images/technion/ecu.webp" alt="">
+      <p class="mono">05 / 06</p>
+      <h1>Technion Turbomachinery Lab</h1>
+      <p class="hero-lead">Hybrid system architect and ECU designer for a hybrid microturbine UAV powerplant.</p>
+    </section>
+
+    <dl class="stats">
+      <div><dd>ESP32</dd><dt class="mono">Custom engine control unit</dt></div>
+      <div><dd>CAN</dd><dt class="mono">Bus telemetry</dt></div>
+      <div><dd>2026</dd><dt class="mono">April to August</dt></div>
+    </dl>
+
+    <section class="band">
+      <div>
+        <h2>Overview</h2>
+        <p class="band-kicker mono">Hybrid System Architect &amp; ECU Design Intern<br>April 2026 to August 2026</p>
+      </div>
+      <div class="band-body">
+        <p>At the Technion Turbomachinery Laboratory I was lead system architect for the UMGT hybrid microturbine powerplant. I defined the mechanical and electrical layout, the power path, and the integration into a custom unmanned aircraft.</p>
+        <p>I designed, fabricated, and programmed the engine control unit: an ESP32-based board written in embedded C that reads exhaust gas temperature, RPM, and current, reports over CAN bus, and switches high-current outputs through MOSFETs.</p>
+      </div>
+    </section>
+
+    <section class="gallery" aria-label="Photos">
+      <figure class="wide"><img src="../assets/images/technion/ecu.webp" alt="Custom ESP32 engine control unit" loading="lazy"><figcaption class="mono">Custom ESP32 engine control unit</figcaption></figure>
+      <figure class="wide"><img src="../assets/images/technion/integration.webp" alt="ECU integration with the hybrid UAS" loading="lazy"><figcaption class="mono">ECU integration with the hybrid UAS</figcaption></figure>
+    </section>
+
+    <section class="band band--grey">
+      <div>
+        <h2>Highlights</h2>
+      </div>
+      <div class="band-body">
+        <ul class="rows">
+          <li><div><strong>Defined the drone, hybrid architecture, and generator relationship</strong></div></li>
+          <li><div><strong>Thermocouple (EGT), RPM, and current sensing on one board</strong></div></li>
+          <li><div><strong>MOSFET-switched high-current outputs</strong></div></li>
+          <li><div><strong>Board routed, built, and brought up by me</strong></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <a class="tile tile--wide" href="xjep.html">
+      <img src="../assets/images/xjep/team.jpg" alt="" loading="lazy">
+      <span class="tile-label"><span class="tile-sub mono">Next project</span><span class="tile-title">Experimental Jet Engine Propulsion</span></span>
+      <span class="tile-arrow" aria-hidden="true">&rarr;</span>
+    </a>
+  </main>
+
+  <footer class="site-footer mono">
+    <p>&copy; <span id="year"></span> Owen Maute</p>
+    <p><a href="mailto:owen.maute@gmail.com">Email</a> &nbsp;/&nbsp; <a href="https://www.linkedin.com/in/owen-m-27433832b/">LinkedIn</a> &nbsp;/&nbsp; <a href="https://github.com/Ayanam1R31">GitHub</a></p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

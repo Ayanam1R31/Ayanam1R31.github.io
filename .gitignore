@@ -147,3 +147,9 @@ vite.config.ts.timestamp-*
 
 # Turbo Repo
 .turbo
+
+# Claude Code local config
+.claude/
+
+# Temporary image contact sheet
+_sheet/
