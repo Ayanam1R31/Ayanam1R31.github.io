@@ -237,16 +237,57 @@ button:focus-visible {
   text-decoration: none;
 }
 
+/* Project page header: text on the left, cover photo on the right */
 .hero--project {
-  align-items: flex-start;
-  justify-content: flex-end;
-  padding: var(--gutter);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-rows: 1fr auto auto auto 1fr;
+  column-gap: clamp(1.5rem, 4vw, 4rem);
+  justify-items: start;
+  min-height: 0;
+  padding: clamp(1.5rem, 4vw, 3.5rem) 0;
+  overflow: visible;
   text-align: left;
 }
 
+.hero--project > * {
+  grid-column: 1;
+}
+
+.hero--project > .mono {
+  grid-row: 2;
+}
+
 .hero--project h1 {
+  grid-row: 3;
   margin-top: 0.75rem;
-  font-size: clamp(2.6rem, 9vw, 8rem);
+  font-size: clamp(2.2rem, 4.4vw, 4.75rem);
+}
+
+.hero--project .hero-lead {
+  grid-row: 4;
+}
+
+.hero--project .hero-media {
+  position: static;
+  grid-column: 2;
+  grid-row: 1 / -1;
+  align-self: center;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  opacity: 1;
+}
+
+@media (max-width: 50rem) {
+  .hero--project {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .hero--project .hero-media {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .hero-lead {
@@ -497,58 +538,42 @@ button:focus-visible {
 }
 
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--gutter);
+  columns: 2;
+  column-gap: var(--gutter);
+  max-width: 78%;
+  margin: 0 auto;
   padding: var(--gutter);
 }
 
 .gallery figure {
-  background: #0c0d0d;
-}
-
-.gallery .wide {
-  grid-column: 1 / -1;
+  break-inside: avoid;
+  margin-bottom: var(--gutter);
 }
 
 .gallery img,
 .gallery video {
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-}
-
-.gallery .tall img,
-.gallery .tall video {
-  aspect-ratio: 3 / 4;
-}
-
-.gallery .wide img,
-.gallery .wide video {
-  aspect-ratio: auto;
-  max-height: 92vh;
-}
-
-.gallery .fit img {
-  aspect-ratio: 1;
-  object-fit: contain;
-  background: #000000;
+  height: auto;
 }
 
 .gallery .contain img {
-  object-fit: contain;
   background: #ffffff;
 }
 
 .gallery figcaption {
-  padding: 0.75rem 0 0.25rem;
-  background: var(--bg);
+  padding-top: 0.6rem;
   color: var(--muted);
+}
+
+@media (max-width: 62rem) {
+  .gallery {
+    max-width: none;
+  }
 }
 
 @media (max-width: 40rem) {
   .gallery {
-    grid-template-columns: 1fr;
+    columns: 1;
   }
 }
 
