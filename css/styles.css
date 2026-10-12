@@ -381,6 +381,13 @@ button:focus-visible {
   font-variant-emoji: text;
 }
 
+@media (max-width: 40rem) {
+  .tile-arrow,
+  .button span[aria-hidden] {
+    display: none;
+  }
+}
+
 .tile--wide {
   aspect-ratio: auto;
   min-height: 22rem;
