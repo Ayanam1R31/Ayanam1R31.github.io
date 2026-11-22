@@ -1,0 +1,99 @@
+# Owen Maute
+
+> Mechanical engineering student at Embry-Riddle Aeronautical University (B.S. expected May 2028, minor in Electrical and Computer Engineering) who designs, builds, and tests hybrid propulsion systems, engine control electronics, and unmanned aircraft. Founder and lead engineer of Project ADAM, a hybrid microturbine powerplant producing 32 kg of thrust and 6 kW of continuous electrical power. First author of an IEEE MILCOM 2025 paper. Embry-Riddle College of Engineering Researcher of the Year 2025-2026.
+
+This file is a plain-text summary of Owen Maute's portfolio for search engines, AI assistants, and recruiting tools. Everything here is also on the human-readable site at https://ayanam1r31.github.io/.
+
+## Quick facts
+
+- Name: Owen Maute
+- Location: Daytona Beach, Florida, USA
+- Citizenship: United States citizen
+- Education: B.S. Mechanical Engineering, Embry-Riddle Aeronautical University, Daytona Beach. Minor in Electrical and Computer Engineering. Expected graduation May 2028. Dean's List every year.
+- Looking for: internships, co-ops, research positions, and partnerships in propulsion, unmanned aircraft systems (UAS), defense hardware, and embedded systems
+- Email: owen.maute@gmail.com
+- LinkedIn: https://www.linkedin.com/in/owen-m-27433832b/
+- GitHub: https://github.com/Ayanam1R31
+- Company: https://projectadam.tech/
+
+## Core strengths
+
+- Propulsion: microturbines and small turbojets, hybrid-electric powerplants, turbine-driven generators, afterburners, recuperators, fuel pumps and fuel systems
+- Engine control and electronics: FADEC and ECU design, ESP32 and STM32 microcontrollers, embedded C, custom PCB design and routing, CAN bus telemetry, thermocouple (EGT), RPM, and current sensing, MOSFET power switching, data acquisition (DAQ), VESC motor control, LabVIEW
+- Aircraft design: VTOL and high-speed UAV configuration, aerodynamics and stability analysis, man-portable and tube-launched UAV packaging
+- Simulation and analysis: ANSYS Fluent CFD, OpenVSP, XFLR5, MATLAB, MATLAB Antenna Designer
+- RF and signals: software-defined radio (HackRF One), GNU Radio, antenna design, anechoic chamber testing, direction finding, EM situational awareness
+- Design and manufacturing: Fusion 360 CAD, design for additive manufacturing, 3D printing production, test stand and dynamometer design, liquid cooling systems, harness routing
+- Leadership: founded and ran a company; leads a cross-disciplinary engineering team of 7; directs 30+ students in a propulsion club; published and presented research as first author
+
+## Recognition
+
+- College of Engineering Researcher of the Year, Embry-Riddle, 2025-2026
+- Best Poster Award, 2026, for the Project ADAM hybrid microturbine
+- First author, IEEE Military Communications Conference (MILCOM) 2025, Los Angeles
+- Dean's List, every year at Embry-Riddle
+- Power Generation Lead, Embry-Riddle entry in the USAF/AFRL Aerospace Propulsion Outreach Program (APOP) 2026-2027
+
+## Projects
+
+### Project ADAM: hybrid microturbine powerplant (Founder and Project Lead, April 2025 to present)
+
+- Invented and built a hybrid microturbine that mounts a generating motor directly on an active turbine shaft, so one unit produces jet thrust and electrical power at the same time
+- 32 kg maximum thrust, 6 kW continuous electrical power, 4.2 kg system weight, runs on Jet A or kerosene, about 43 times the energy density of LiPo batteries
+- Drop-in design: needs only a fuel line, the main power bus, and a throttle command; actively cools its own generator and ESC
+- Owns the full system architecture, the ECU and data acquisition design, and integration testing; leads a team of 7 across propulsion, structures, avionics, and firmware
+- Details: https://ayanam1r31.github.io/projects/project-adam.html and https://projectadam.tech/
+
+### Project LILITH: VTOL jet UAV powered by ADAM (Founder, Project Lead and Technical Lead, 2025 to present)
+
+- 18 kg fin-stabilized unmanned aircraft that takes off vertically and cruises at Mach 0.62, with 140 km range and 4.5 kg payload
+- Three flight states: electric VTOL, low-speed quadcopter-style control, and jet cruise above Mach 0.3 with props folded flush
+- 6 kW of onboard generation powers lift props, sensors, and payload in every flight state
+- Aerodynamics and stability evaluated in ANSYS Fluent, OpenVSP, and XFLR5
+- Details: https://ayanam1r31.github.io/projects/project-lilith.html
+
+### RadAround: field-expedient RF direction finder (Inventor and Research Lead, November 2024 to December 2025)
+
+- Passive 2-D direction finder that builds electromagnetic heatmaps by mechanically steering a narrow-beam antenna while a software-defined radio samples each point
+- Built only from field-available parts: a 3D printer, HackRF One, Arduino, residential and chicken wire, and printer-salvaged stepper motors; buildable in under a day
+- Designed 2.4 GHz and 1.7 GHz helicone antennas (13.94 dBi and 14.01 dBi boresight gain), a 360-degree azimuth / 90-degree elevation worm-gear rotor, and a real-time GNU Radio and MATLAB signal pipeline
+- Detected a Wi-Fi router and a laptop through walls, and mapped a PC's processor utilization from a distance
+- Publication: O. Maute, B. A. Roberts, and B. Pekoz, "RadAround: A Field-Expedient Direction Finder for Contested IoT Sensing & EM Situational Awareness," Proc. 2025 IEEE Military Communications Conference (MILCOM), Los Angeles, CA, Oct. 2025, pp. 1-6. DOI: 10.1109/MILCOM64451.2025.11310632. arXiv: https://arxiv.org/abs/2511.11392
+- Details: https://ayanam1r31.github.io/projects/radaround.html
+
+### ModuMotor LLC: additive-manufactured car parts, first company (Founder and CEO, December 2023 to September 2024)
+
+- Founded an LLC producing low-cost, high-performance 3D-printed replacement and performance automotive parts; sold 500+ units
+- Shipped to France, Israel, Japan, the UK, Australia, the UAE, and Canada
+- Owned the whole product cycle: Fusion 360 design, design for additive manufacture, ABS production on a six-printer farm, quality control, pricing, marketing, customer support, and managing employees
+- Details: https://ayanam1r31.github.io/projects/modumotor.html
+
+### Technion Turbomachinery Laboratory: UAV internship (Hybrid System Architect and ECU Design Intern, April 2026 to August 2026)
+
+- Lead system architect for the Technion UMGT hybrid microturbine powerplant: defined the mechanical and electrical layout, power path, and custom UAS integration
+- Designed, fabricated, and programmed a custom ESP32 engine control unit in embedded C with EGT, RPM, and current sensing, CAN bus telemetry, and MOSFET-switched high-current outputs on a self-routed board
+- Details: https://ayanam1r31.github.io/projects/technion.html
+
+### Experimental Jet Engine Propulsion (XJEP): projects lead (Vice President, Afterburner and Recuperator Lead)
+
+- Three-year member; Vice President on the executive board, leading project selection, technical reviews, and problem solving across four engine programs
+- Leads the small-scale modular afterburner program and directs 30+ students
+- Designed the internal recuperator nozzle and nozzle fins and validated them in ANSYS CFD; designed a custom gear pump that more than doubled fuel delivery; built a 10-sensor SPI data acquisition system
+- Details: https://ayanam1r31.github.io/projects/xjep.html
+
+## Other experience
+
+- VerdeGo Aero, Mechanical / Electrical Engineering Intern, May 2025 to August 2025: engineered a complete dynamometer test stand for large electric propulsion motors under an AFRL-funded program, including two independent liquid-cooling systems; tuned a sub-scale hybrid-electric motor on VESC; designed a NASA-contracted aircraft interior layout in CAD
+- Peregrine Aerospace, Design Engineer, February 2025 to April 2025: developed and bench-tested STM32 microcontroller PCBs for microturbine FADEC; invented a variable-displacement mechanism for small gear pumps that reduced cavitation and increased fuel delivery
+- Eagle Flight Research Center, Embry-Riddle, Aerospace Research Employee, December 2024 to July 2025: led the redesign of VOLTRON, a hybrid rotary powerplant generating 70+ kW of electrical power for hybrid UAVs
+- Tube-Launched UAV, Design Lead, September 2024 to February 2025: conceived and led a man-portable, shoulder-launched tube UAV, covering the airframe, folding-wing mechanism, and launch-tube packaging
+
+## Pages
+
+- [Home](https://ayanam1r31.github.io/): overview, experience, recognition, contact
+- [Project ADAM](https://ayanam1r31.github.io/projects/project-adam.html)
+- [Project LILITH](https://ayanam1r31.github.io/projects/project-lilith.html)
+- [RadAround](https://ayanam1r31.github.io/projects/radaround.html)
+- [ModuMotor LLC](https://ayanam1r31.github.io/projects/modumotor.html)
+- [Technion Turbomachinery Lab](https://ayanam1r31.github.io/projects/technion.html)
+- [Experimental Jet Engine Propulsion](https://ayanam1r31.github.io/projects/xjep.html)
